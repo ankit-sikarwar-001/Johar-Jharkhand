@@ -29,6 +29,7 @@ import CalendarHeader from "../pages/Home/Calender";
 import Maplive from "../pages/Home/map/Maplive";
 import Livedirect from "../pages/Home/map/Livedirect";
 import Explore from "../pages/Explore/explore";
+import Planner from "../pages/Planner/planner";
 
 function App() {
   useEffect(() => {
@@ -58,6 +59,7 @@ function App() {
           <Route exact path="/notifications" element={<Notification />} />
           <Route exact path="/Maplive" element={<Maplive />} />
           <Route exact path="/Livedirect" element={<Livedirect />} />
+          <Route exact path="/planner" element={<Planner />} />
 
           {/* Traveller Routes */}
           <Route

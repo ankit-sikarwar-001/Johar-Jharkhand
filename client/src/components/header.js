@@ -34,6 +34,7 @@ function Header() {
     try {
       localStorage.clear();
       toast.success("Logout Successfully");
+      window.scrollTo(0, 0)
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -48,7 +49,9 @@ function Header() {
             id="logo"
             className="text-white font-bold text-nowrap mr-5 text-2xl text-center py-2"
           >
-            <Link to="/">NAMASTE-Bharat</Link>
+            <Link onClick={() => window.scrollTo(0, 0)} to="/">
+              JOHAR JHARKHAND
+            </Link>
           </div>
         </div>
         <div className="flex items-center content-center relative w-full xl:w-auto xl:mx-5">
@@ -84,16 +87,32 @@ function Header() {
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
           </button>
           <div className="flex flex-col md:flex-row items-center">
-            <NavLink className="mx-3 text-white my-2 md:my-0" to="/Explore">
+            <NavLink
+              className="mx-3 text-white my-2 md:my-0"
+              onClick={() => window.scrollTo(0, 0)}
+              to="/Explore"
+            >
               Explore
             </NavLink>
-            <NavLink className="mx-3 text-white my-2 md:my-0" to="/about">
+            <NavLink
+              className="mx-3 text-white my-2 md:my-0"
+              onClick={() => window.scrollTo(0, 0)}
+              to="/about"
+            >
               About
             </NavLink>
-            <NavLink className="mx-3 text-white my-2 md:my-0" to="/Calender">
+            <NavLink
+              className="mx-3 text-white my-2 md:my-0"
+              onClick={() => window.scrollTo(0, 0)}
+              to="/Calender"
+            >
               Calendar
             </NavLink>
-            <NavLink className="mx-3 text-white my-2 md:my-0" to="/shop">
+            <NavLink
+              className="mx-3 text-white my-2 md:my-0"
+              onClick={() => window.scrollTo(0, 0)}
+              to="https://neon-smakager-29dc15.netlify.app/"
+            >
               Shop
             </NavLink>
           </div>
@@ -113,6 +132,7 @@ function Header() {
               >
                 <NavLink
                   className="text-gray-900 px-2 py-1 rounded m-1 cursor-pointer"
+                  onClick={() => window.scrollTo(0, 0)}
                   to="/profile"
                 >
                   <img
@@ -126,6 +146,7 @@ function Header() {
                 {isHovered && (
                   <div className="absolute top-20 right-0 bg-white shadow-md rounded-lg py-2 w-32 text-center z-50">
                     <NavLink
+                      onClick={() => window.scrollTo(0, 0)}
                       to="/profile"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                     >
@@ -133,6 +154,7 @@ function Header() {
                     </NavLink>
                     <NavLink
                       onClick={handleLogout}
+                      
                       to="/"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                     >

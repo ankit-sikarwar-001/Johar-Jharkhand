@@ -1,11 +1,29 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Section = () => {
   const [muted, setMuted] = useState(true);
+   const navigate = useNavigate();
+   const [location, setLocation] = useState("");
+   const [date, setDate] = useState("");
+   const [transport, setTransport] = useState("");
 
   const toggleAudio = () => {
     console.log("hello ");
     setMuted(!muted);
+  };
+
+  const handleSubmit = () => {
+    if (!location || !date || !transport) {
+      alert("Please fill all fields before booking.");
+      return;
+    }
+
+    // Pass data to Planner using state
+    window.scrollTo(0,0);
+    navigate("/planner", {
+      state: { location, date, transport },
+    });
   };
 
   return (
@@ -16,7 +34,8 @@ const Section = () => {
         <div className="absolute inset-0 rounded-2xl">
           <video
             className="w-full h-full object-cover rounded-2xl"
-            src="/videos/india1.mp4"
+            src="/videos/jharkhand.mp4"
+            // /videos/india1.mp4
             autoPlay
             muted={muted}
             loop
@@ -56,13 +75,17 @@ const Section = () => {
             </div>
 
             {/* Search Inputs - All in one line */}
-            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              {/* Where */}
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 bg-white shadow-md rounded-xl p-6">
+              {/* Current Location */}
               <div className="flex-1">
-                <label className="block text-gray-500 mb-1">Where?</label>
+                <label className="block text-gray-500 mb-1">
+                  Your Location?
+                </label>
                 <input
                   type="text"
-                  placeholder="Search location here..."
+                  placeholder="Enter your current city..."
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-500"
                 />
               </div>
@@ -71,26 +94,38 @@ const Section = () => {
               <div className="flex-1">
                 <label className="block text-gray-500 mb-1">When?</label>
                 <input
-                  type="text"
-                  placeholder="Add dates here..."
+                  type="date"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-500"
                 />
               </div>
 
-              {/* Who */}
+              {/* Mode of Transport */}
               <div className="flex-1">
-                <label className="block text-gray-500 mb-1">Who?</label>
-                <input
-                  type="text"
-                  placeholder="Add guests here..."
+                <label className="block text-gray-500 mb-1">
+                  Preferred Transport?
+                </label>
+                <select
+                  value={transport}
+                  onChange={(e) => setTransport(e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-500"
-                />
+                >
+                  <option value="">Select Transport</option>
+                  <option value="Bus">Bus</option>
+                  <option value="Train">Train</option>
+                  <option value="Flight">Flight</option>
+                  <option value="Taxi">Taxi</option>
+                </select>
               </div>
 
-              {/* Search Button */}
-              <div className="sm:w-auto pt-5 ">
-                <button className="bg-blue-600 text-white  px-6 py-2 rounded-lg hover:bg-blue-700 w-full sm:w-auto">
-                  Book
+              {/* Button */}
+              <div className="sm:w-auto pt-5">
+                <button
+                  onClick={handleSubmit}
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-full sm:w-auto"
+                >
+                  Plan & Book
                 </button>
               </div>
             </div>

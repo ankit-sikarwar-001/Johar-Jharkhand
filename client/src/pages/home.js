@@ -1,11 +1,10 @@
 import React from "react";
 // import Navbar from "./Home/Navbar"
 import HeroSection from "./Home/Section";
-import Section2 from "./Home/Section2";
+import RichCulture from "./Home/RichCulture";
 import AutoSlider from "./Home/Autoslider";
 import Calendar from "./Home/Calender";
 import Favtour from "./Home/Favtour";
-import Mapnavi from "./Home/Mapnavi";
 
 function Home() {
   return (
@@ -13,12 +12,12 @@ function Home() {
       <br />
       <HeroSection />
       <br />
-      <Section2 />
+      <RichCulture />
       <br />
       <AutoSlider />
       <Favtour />
       <Calendar />
-      <Mapnavi />
+      
     </div>
   );
 }

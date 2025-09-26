@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "../Explore/explore.css";
+import NamasteSpeaker from "../Explore/NamasteSpeaker"
+import Mapnavi from "../Home/Mapnavi";
 
 export default function Explore() {
   const scrollRef = useRef(null);
@@ -21,7 +23,7 @@ export default function Explore() {
 
   useEffect(() => {
     const textElement = textRef.current;
-    const textContent = "Explore the beauty of India through Namste Bharat";
+    const textContent = "Explore the beauty of Jharkhand through Johar Jharkhand";
     let index = 0;
 
     const typingEffect = setInterval(() => {
@@ -61,28 +63,30 @@ export default function Explore() {
         }}
       >
         <h2 className="text-center text-slate-800 text-3xl font-bold mb-4">
-          Explore the diverse cultural music of India
+          Explore the diverse cultural music of Jharkhand
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center place-items-center">
           {[
-            "Himalayan Songs",
-            "Haryanvi Songs",
-            "Punjabi Songs",
-            "Rajasthani Songs",
-            "Bengali Songs",
-            "Tamil Songs",
+            "Johar Jharkhand",
+            "Thar Ghuma",
+            "Chota Nagpur",
+            "Mohini",
+            "GANJA",
+            "Chudi Payal",
           ].map((song, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg p-3">
               <img
                 onClick={() => play(index)}
                 onDoubleClick={() => stop(index)}
                 className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-                src={`/images/${song.toLowerCase().replace(" ", "_")}.png`}
+                src={`/jharkhandimg/${song
+                  .toLowerCase()
+                  .replace(" ", "_")}.jpg`}
                 alt={song}
               />
               <audio
                 ref={audioRefs}
-                src={`/audio/${song.toLowerCase().replace(" ", "_")}.m4a`}
+                src={`/audio/${song.toLowerCase().replace(" ", "_")}.mp3`}
                 controls
                 className="w-full mt-2 border border-gray-300"
               ></audio>
@@ -106,13 +110,13 @@ export default function Explore() {
       <div className="h-[calc(90vh)] mt-5 w-full">
         <div className="h-1/2 bg-slate-700 relative">
           <div className="text-white text-center text-7xl font-thick font-extrabold py-10">
-            <p>India's Creative Legacy</p>
+            <p>Jharkhand's Creative Legacy</p>
             <p className="font-normal text-3xl mt-5">
               -----of timeless tradition-----
             </p>
           </div>
         </div>
-        <section className="py-20 bg-transparent relative z-10 bottom-48">
+        <section className="py-16 bg-transparent relative z-10 bottom-52">
           <div className="max-w-7xl mx-auto px-4">
             {/* Cards Slider */}
             <div
@@ -123,23 +127,21 @@ export default function Explore() {
               <div className="relative min-w-[300px] bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 ">
                 <img
                   className="w-full h-48 object-cover"
-                  src="/crafts-images/kathputlis-rj.jpeg"
+                  src="https://c7.alamy.com/comp/2C5BEEY/bamboo-made-tree-decorated-with-clay-made-butterflybeebird-and-dragonfly-by-santal-or-santhal-tribe-of-bengal-2C5BEEY.jpg"
                   alt="kathputli-image"
                 />
                 <div className="p-6">
-                  <h3 className="text-l font-bold text-slate-600 ">
-                    Rajasthan
-                  </h3>
+                  {/* <h3 className="text-l font-bold text-red-600 ">Rajasthan</h3> */}
                   <p className="text-black mb-1 mt-2">
-                    Kathputlis :-<span className="font-bold"></span>
+                    Bamboo Made tree :-<span className="font-bold"></span>
                   </p>
-                  <p className="text-black">
-                    Rajasthani Kathputlis showcase India's traditional puppet
-                    artistry.
+                  <p className="text-black text-sm">
+                    Bamboo made tree decorated with clay made butterfly,bee,bird
+                    and dragonfly by santal or santhal tribe of bengal
                   </p>
                   <a
-                    href="/login"
-                    className="text-slate-600 hover:text-slate-800 mt-2 inline-block"
+                    href="/"
+                    className="text-red-600 hover:text-red-800 mt-2 inline-block"
                   >
                     Know more →
                   </a>
@@ -150,23 +152,23 @@ export default function Explore() {
               <div className="relative min-w-[300px] bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 ">
                 <img
                   className="w-full h-48 object-cover"
-                  src="/crafts-images/bagh-print-mp.jpeg"
+                  src="https://5.imimg.com/data5/EF/LF/MY-4031115/printed-silk-saree.jpg"
                   alt="bagh print-image"
                 />
                 <div className="p-6">
-                  <h3 className="text-l font-bold text-slate-600 ">
-                    Madhya Pradesh
+                  <h3 className="text-l font-bold text-red-600 ">
+                    Ramgarh Famous Saree
                   </h3>
                   <p className="text-black mb-1 mt-2">
-                    Bagh Print :-<span className="font-bold"></span>
+                    Garh Print :-<span className="font-bold"></span>
                   </p>
                   <p className="text-black">
-                    Bagh print of MP blends traditional printing with vibrant
-                    natural dyes.
+                    Bagh print of Jharkhand blends traditional printing with
+                    vibrant natural dyes.
                   </p>
                   <a
-                    href="/login"
-                    className="text-slate-600 hover:text-slate-800 mt-2 inline-block"
+                    href="/"
+                    className="text-red-600 hover:text-red-800 mt-2 inline-block"
                   >
                     Know more →
                   </a>
@@ -180,9 +182,7 @@ export default function Explore() {
                   alt="dhokra-image"
                 />
                 <div className="p-6">
-                  <h3 className="text-l font-bold text-slate-600 ">
-                    Chattisgarh
-                  </h3>
+                  {/* <h3 className="text-l font-bold text-red-600 ">Chattisgarh</h3> */}
                   <p className="text-black mb-1 mt-2">
                     Bastar Dhokra :-<span className="font-bold"></span>
                   </p>
@@ -191,8 +191,8 @@ export default function Explore() {
                     designs.
                   </p>
                   <a
-                    href="/login"
-                    className="text-slate-600 hover:text-slate-800 mt-2 inline-block"
+                    href="/"
+                    className="text-red-600 hover:text-red-800 mt-2 inline-block"
                   >
                     Know more →
                   </a>
@@ -203,21 +203,21 @@ export default function Explore() {
               <div className="relative min-w-[300px] bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 ">
                 <img
                   className="w-full h-48 object-cover"
-                  src="/crafts-images/bihar-khatwa.jpeg"
+                  src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1748662332315_nh9gy_1224x816.jpg?impolicy=queryparam&im=Resize=(847,400),aspect=fit&q=75"
                   alt="kathputli-image"
                 />
                 <div className="p-6">
-                  <h3 className="text-l font-bold text-slate-600 ">Bihar</h3>
+                  {/* <h3 className="text-l font-bold text-red-600 ">Bihar</h3> */}
                   <p className="text-black mb-1 mt-2">
-                    Khatwa's :-<span className="font-bold"></span>
+                    Artifacts :-<span className="font-bold"></span>
                   </p>
                   <p className="text-black">
                     This art highlights intricate work & blending tradition with
                     creativity.
                   </p>
                   <a
-                    href="/login"
-                    className="text-slate-600 hover:text-slate-800 mt-2 inline-block"
+                    href="/"
+                    className="text-red-600 hover:text-red-800 mt-2 inline-block"
                   >
                     Know more →
                   </a>
@@ -227,23 +227,21 @@ export default function Explore() {
               <div className="relative min-w-[300px] bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 ">
                 <img
                   className="w-full h-48 object-cover"
-                  src="/crafts-images/kathputlis-rj.jpeg"
+                  src="https://im.hunt.in/cg/jhar/About/toys.jpg"
                   alt="kathputli-image"
                 />
                 <div className="p-6">
-                  <h3 className="text-l font-bold text-slate-600 ">
-                    Rajasthan
-                  </h3>
+                  {/* <h3 className="text-l font-bold text-red-600 ">Rajasthan</h3> */}
                   <p className="text-black mb-1 mt-2">
                     Kathputlis :-<span className="font-bold"></span>
                   </p>
                   <p className="text-black">
-                    Rajasthani Kathputlis showcase India's traditional puppet
+                    Jharkhand Kathputlis showcase India's traditional puppet
                     artistry.
                   </p>
                   <a
-                    href="/login"
-                    className="text-slate-600 hover:text-slate-800 mt-2 inline-block"
+                    href="/"
+                    className="text-red-600 hover:text-red-800 mt-2 inline-block"
                   >
                     Know more →
                   </a>
@@ -254,46 +252,68 @@ export default function Explore() {
         </section>
       </div>
 
+      {/* languages */}
+      <NamasteSpeaker />
+
       {/* legacy ends  */}
-      <div className="text-4xl ">
-        <p className="text-center text-white font-extrabold  relative top-12 underline">
-          India's Diverse Beautiful Sarees{" "}
-        </p>
-        <div className=" w-full h-screen grid grid-cols-8 justify-center ">
-          <div className="bg-red-800 w-full h-full relative">
+      <div className="relative bg-gradient-to-r from-pink-200 via-purple-600 to-indigo-700 py-16">
+        {/* Title */}
+        <h2 className="text-center text-4xl md:text-5xl font-extrabold text-white mb-10 underline decoration-yellow-400">
+          Jharkhand's Diverse Beautiful Sarees
+        </h2>
+
+        {/* Saree Grid */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
+          {/* Saree 1 */}
+          <div className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
             <img
-              className="w-full h-full object-cover object-center"
-              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTWZ2Yg5bTeIAIap7n9rueLTazh5jM_hxXMmkLm1YFOYAhM8ANmJUNz00L5dEv7r81Egey-GA_ofLUYfG0TNTQdXCDWjhZuT4iovCw8oR6ghAsDuB1fGcpk&usqp=CAE"
-              alt="banarasi sarees"
+              className="w-full h-80 object-cover object-top"
+              src="https://maahishmati.com/cdn/shop/files/BestCottonsareesofyear20242025byMaahishmatiSarees-Bhagalpurcottonslubsarees_60.jpg?v=1720296452&width=600"
+              alt="Banarasi Saree"
             />
+            <div className="bg-white text-center py-3 font-semibold text-gray-800">
+              Bhagalpur Saree
+            </div>
           </div>
-          <div className="bg-yellow-300  w-full">
+
+          {/* Saree 2 */}
+          <div className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
             <img
-              className="w-full h-full object-cover object-center"
-              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZq30JVCQwrwgS_-6Az7wq_CIbLw5mIVDXYE1aH-_qG2hw3FPh4QcDl-gnI5N0UlAsadBz90uhm2_Zc7RpRvSqxaopqV5MxtsAtPcHKRg&usqp=CAE"
-              alt="chikankari sarees"
+              className="w-full h-80 object-cover  object-top"
+              src="https://d2ki7eiqd260sq.cloudfront.net/Mustard-Woven-Pure-Silk-Kanjivaram-Saree81607057-3115-43b4-8836-4f13c6366807.jpg"
+              alt="Chikankari Saree"
             />
+            <div className="bg-white text-center py-3 font-semibold text-gray-800">
+              Ranchi Saree
+            </div>
           </div>
-          <div className="bg-blue-300 w-full">
+
+          {/* Saree 3 */}
+          <div className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
             <img
-              className=" w-full h-full object-cover "
-              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqCi7fak0MK2Bv7zDBlqH8VveybKGaA6l_jM_IiaeG37wA6jo1oOJyLblSmQ_NvfXieVLXp1c7EFPcyivDBRFT7FkDOpKLsxGXh9nMOkwZEETy4AuX1DGZ&usqp=CAE"
-              alt="bhagalpuri sarees"
+              className="w-full h-80 object-cover  object-top"
+              src="https://i.pinimg.com/736x/27/3f/58/273f58e74be233c9b534d2620c1b499c.jpg"
+              alt="Bhagalpuri Saree"
             />
+            <div className="bg-white text-center py-3 font-semibold text-gray-800">
+              Khunti & Ghumla Saree
+            </div>
           </div>
-          <div className="bg-green-300 w-full">
+
+          {/* Saree 4 */}
+          <div className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
             <img
-              className="w-full h-full object-cover object-center"
-              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZq30JVCQwrwgS_-6Az7wq_CIbLw5mIVDXYE1aH-_qG2hw3FPh4QcDl-gnI5N0UlAsadBz90uhm2_Zc7RpRvSqxaopqV5MxtsAtPcHKRg&usqp=CAE"
-              alt="chikankari sarees"
+              className="w-full h-80 object-cover object-top"
+              src="https://www.sareemanufacturers.com/uploaded-files/category/images/thumbs/Sequins-Work-Saree-thumbs-337X460.jpg"
+              alt="Saraikela-Kharsawan Saree"
             />
+            <div className="bg-white text-center py-3 font-semibold text-gray-800">
+              Saraikela-Kharsawan Saree
+            </div>
           </div>
-          <div className="bg-slate-300 w-full"></div>
-          <div className="bg-pink-300 w-full"></div>
-          <div className="bg-purple-300 w-full"></div>
-          <div className="bg-neutral-300 w-full"></div>
         </div>
       </div>
+      <Mapnavi />
     </div>
   );
 }

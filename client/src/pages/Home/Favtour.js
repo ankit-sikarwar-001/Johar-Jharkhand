@@ -5,34 +5,26 @@ const Favtour = () => {
 
   const slides = [
     {
-      title: "Vrindavan",
-      description: `Vrindavan is a holy town in Uttar Pradesh, northern India. The Hindu deity Krishna 
-                    is said to have spent his childhood here. It's home to temples, many dedicated to 
-                    Krishna and his lover, the deity Radha. At BankeBihari Temple, the curtain in front 
-                    of Krishna's statue is opened and closed every few minutes.`,
-      imageUrl:
-        "https://incrediblebharat.co.in/assets/frontend/new/images/meet-03.jpg", // Replace with actual image path
+      title: "Baba Baidyanath Temple",
+      description: `Baba Baidyanath Temple in Deoghar, Jharkhand, is one of the twelve Jyotirlingas of Lord Shiva. A major pilgrimage site, it attracts millions of devotees, especially during Shravan, when Kanwariyas offer holy Ganga water with chants of “Bol Bam.`,
+      imageUrl: "/jharkhandimg/bol-bam.jpg", // Replace with actual image path
     },
     {
-      title: "Agra",
-      description: `Agra, located in Uttar Pradesh, is home to the iconic Taj Mahal, one of the Seven Wonders 
-                    of the World. This beautiful white marble mausoleum was built by Emperor Shah Jahan 
-                    in memory of his wife Mumtaz Mahal.`,
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQI-r6Yn1V2QGBGZ8vVXeVFxSaggxl-oXmaJY4OY5CKvYSPxuOcSUCHj_JwH_mxHQ4HP9GWNXfZyF82QJ_SKop8llDMLZhdH4i8GkqBcQ", // Replace with actual image path
+      title: "Dassam Falls",
+      description: `Dassam Falls, located near Ranchi in Jharkhand, is a stunning waterfall on the Kanchi River, dropping from a height of about 144 feet. Surrounded by lush forests, it is a popular spot for nature lovers and tourists seeking scenic beauty and tranquility.`,
+      imageUrl: "/jharkhandimg/dassam-falls.jpg", // Replace with actual image path
     },
     {
-      title: "Jaipur",
-      description: `Jaipur, the capital of Rajasthan, is known as the Pink City for its distinctive pink-hued 
-                    buildings. It is famous for its historic forts, palaces, and vibrant markets.`,
-      imageUrl: "/home-img/jaipur-hawa.jpeg", // Replace with actual image path
-    },
-    {
-      title: "Delhi",
+      title: "Jagannath Temple",
       description: `Delhi, the capital of India, is a vibrant blend of tradition and modernity. It is home 
                 to historical landmarks like the Red Fort, Qutub Minar, and India Gate. The city's bustling 
                 markets, street food, and cultural diversity make it a must-visit destination.`,
-      imageUrl: "/home-img/Redelhi.jpg", // Replace with actual image path
+      imageUrl: "/jharkhandimg/jagannath-temple.jpg", // Replace with actual image path
+    },
+    {
+      title: "Trikuta Parvata",
+      description: `Trikuta Parvata, located near Deoghar in Jharkhand, is a sacred hill with three peaks believed to symbolize the Hindu Trinity—Brahma, Vishnu, and Shiva. A popular spiritual and trekking destination, it offers both religious significance and scenic views.`,
+      imageUrl: "/jharkhandimg/trikuta-parvat-deoghar.jpg", // Replace with actual image path
     },
   ];
 

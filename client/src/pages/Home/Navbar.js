@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <a href="/">Namaste Bharat </a>
+          <a href="/">Johar Jharkhand </a>
         </div>
 
         {/* Nav Links */}

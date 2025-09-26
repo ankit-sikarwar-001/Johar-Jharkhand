@@ -12,20 +12,32 @@ function About() {
         "https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png", // Replace with actual photo paths
     },
     {
-      name: "Suniti",
-      role: "Backend Developer",
+      name: "Samyak",
+      role: "Frontend Developer",
       photo:
-        "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
-    },
-    {
-      name: "Sarita",
-      role: "AI Expert",
-      photo:
-        "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+        "https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png",
     },
     {
       name: "Ajeet",
-      role: "Project Manager",
+      role: "Backend Developer",
+      photo:
+        "https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png",
+    },
+    {
+      name: "Kirti",
+      role: "Analyst & Researcher",
+      photo:
+        "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+    },
+    {
+      name: "Debjit Dey",
+      role: "Devops Expert",
+      photo:
+        "https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png",
+    },
+    {
+      name: "Vikas",
+      role: "AI Expert",
       photo:
         "https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png",
     },
@@ -38,45 +50,46 @@ function About() {
           INTRODUCTION
         </p>
       </div>
-      <div className="w-[calc(90vw)] flex flex-col md:flex-row gap-6 p-6 m-auto mt-10 bg-white shadow-xl rounded-lg overflow-hidden ">
-        <div className="flex-1 flex justify-center items-center">
-          <div className="w-1/4 max-h-screen md:w-3/4">
+      <div className="w-[calc(90vw)] mt-0 h-[calc(80vh)] flex flex-col md:flex-row gap-6 p-6 m-auto  bg-white shadow-xl rounded-lg overflow-hidden ">
+        <div className="flex-1 flex h-[calc(60%)] justify-center items-center">
+          <div className="w-1/4 min-h-1/2  md:w-3/4">
             <img
               className=" object-contain rounded-md shadow-md hover:shadow-lg transition-shadow duration-300"
-              src="/images/NAMASTE_BHARAT.png"
-              alt="Namaste Bharat Logo"
+              src="/jharkhandimg/Johar.png"
+              alt="Johar Jharkhand Logo"
             />
           </div>
         </div>
         <div className="flex-1 text-gray-700 ">
           <p className="text-lg leading-relaxed font-light">
-            India is a land of incredible diversity, with every corner offering
-            unique stories, traditions, and destinations. However, many of these
-            gems remain overshadowed or underappreciated due to a lack of
-            visibility in mainstream tourism. Addressing this challenge,{" "}
+            Jharkhand, the land of forests, waterfalls, and rich tribal
+            heritage, holds countless hidden gems that often remain unexplored
+            in mainstream tourism. From sacred temples and vibrant festivals to
+            breathtaking landscapes and indigenous crafts, the state offers
+            unique stories waiting to be discovered. To bring these treasures
+            into the spotlight,{" "}
             <span className="font-semibold text-indigo-600">
-              Namaste Bharat
+              Johar Jharkhand
             </span>{" "}
-            emerges as a transformative platform designed to enhance the
-            popularity of Indian destinations and bolster tourism. By leveraging
-            cutting-edge technology, our application curates authentic,
-            culturally rich content and offers interactive tools to connect
-            travelers with hidden treasures, promoting local economies and
-            preserving heritage.
+            emerges as a transformative platform designed to showcase the
+            cultural, historical, and natural wealth of the state. By leveraging
+            modern technology, our application curates authentic local
+            experiences, interactive guides, and rich content that connect
+            travelers with Jharkhand’s beauty, while also supporting local
+            communities and preserving heritage.
           </p>
           <p className="mt-8 text-lg leading-relaxed font-light">
             The name{" "}
             <span className="font-semibold text-indigo-600">
-              Namaste Bharat
+              Johar Jharkhand
             </span>{" "}
-            signifies a warm and heartfelt welcome to the vibrant spirit of
-            India, as "Namaste" reflects the traditional Indian gesture of
-            greeting, and "Bharat" represents the nation's soulful identity. Our
-            aim is to bridge the gap between travelers and destinations by
-            providing an immersive experience that goes beyond conventional
-            tourism. With an emphasis on accessibility, sustainability, and
-            cultural enrichment, Namaste Bharat aspires to ignite a renewed
-            appreciation for India's unparalleled beauty and diversity.
+            reflects a heartfelt tribal greeting that embodies the warmth and
+            vibrant spirit of the state. Our mission is to bridge the gap
+            between visitors and destinations, offering an immersive experience
+            that goes beyond conventional tourism. With a focus on
+            sustainability, accessibility, and cultural enrichment, Johar
+            Jharkhand aspires to create a deeper appreciation of the state’s
+            unparalleled natural beauty, tribal traditions, and living heritage.
           </p>
         </div>
       </div>
@@ -98,15 +111,19 @@ function About() {
             Our Vision
           </h1>
           <p className="px-3 italic text-gray-200 text-lg leading-relaxed">
-            At NAMASTE-Bharat, we aim to nurture a modern approach to strengthen
-            the traditional essence of Bharat (India) by leveraging innovative
-            technologies to promote cultural awareness, sustainable tourism, and
-            education.
+            At{" "}
+            <span className="font-semibold text-indigo-400">
+              Johar Jharkhand
+            </span>
+            , our vision is to celebrate and preserve the state’s tribal
+            heritage, natural beauty, and vibrant culture by blending tradition
+            with innovation.
           </p>
           <p className="px-3 mt-4 text-gray-300">
-            Our platform bridges the gap between the digital world and India's
-            rich cultural heritage, offering interactive features and
-            personalized experiences.
+            Through technology-driven storytelling, sustainable tourism, and
+            interactive experiences, we aim to connect travelers with
+            Jharkhand’s hidden gems—forests, waterfalls, festivals, and
+            crafts—while empowering local communities.
           </p>
         </div>
       </div>
@@ -117,24 +134,22 @@ function About() {
         <div className="w-full lg:w-[50%] bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-xl text-center transition duration-300 transform hover:scale-105">
           <h1 className="text-4xl font-extrabold py-4 text-white">Our Story</h1>
           <p className="px-3 italic text-gray-200 leading-relaxed">
-            In September, our team embarked on an inspiring journey by
-            participating in an inter-university hackathon, the gateway to Smart
-            India Hackathon 2024. This event ignited a spark to solve one of the
-            most profound challenges of our time — enhancing the travel and
-            tourism landscape of India while celebrating its rich heritage and
-            culture. Among a myriad of problem statements, we chose one deeply
-            rooted in our love for the nation: promoting India's cultural wealth
-            and hidden treasures to the world.
+            In September, our team took part in an inter-university hackathon, a
+            stepping stone to the Smart India Hackathon 2024. Inspired by the
+            need to showcase our homeland, we chose a problem statement rooted
+            in Jharkhand — how to highlight its hidden cultural gems, natural
+            beauty, and tribal heritage to the world.
           </p>
           <p className="px-3 italic text-gray-200 leading-relaxed">
-            Through intense brainstorming, late-night meetings, and passionate
-            discussions, we envisioned a platform that seamlessly blends travel,
-            tourism, education, and employment generation. Our mission was
-            clear: to showcase India’s diverse destinations while creating
-            opportunities for education and livelihoods in tourism. After
-            countless iterations, Namaste Bharat was born — a project that
-            empowers travelers and communities, combining tradition and
-            innovation to celebrate the spirit of India on a global stage.
+            Through long discussions and countless ideas, we envisioned a
+            platform that combines tourism, culture, and livelihood
+            opportunities. This is how{" "}
+            <span className="font-semibold text-indigo-400">
+              Johar Jharkhand
+            </span>
+            was born — a project to digitally preserve Jharkhand’s legacy while
+            empowering local communities and offering travelers a unique
+            cultural journey.
           </p>
         </div>
 
@@ -149,25 +164,25 @@ function About() {
       </div>
 
       {/* offer section  */}
-      <div className="my-12 rounded-md mx-5 lg:mx-20 space-y-8 lg:space-y-0  shadow-2xl transition duration-300 transform ">
+      <div className="my-12 rounded-md mx-5 lg:mx-20 space-y-8 lg:space-y-0 shadow-2xl transition duration-300 transform ">
         <div className="w-full bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-xl text-center text-white">
           <h1 className="text-4xl font-extrabold py-6 text-yellow-50 animate-pulse">
             What We Offer
           </h1>
           <div className="flex lg:flex-wrap flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-6">
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-blue-500 hover:text-white">
-              <h1 className="text-2xl font-bold">Interactive Cultural Map</h1>
+              <h1 className="text-2xl font-bold">Interactive Jharkhand Map</h1>
               <p>
-                Explore India's diverse regions through our interactive cultural
-                map, highlighting key heritage sites, cultural festivals, and
-                unique traditions.
+                Explore Jharkhand’s districts through our interactive cultural
+                map, highlighting waterfalls, temples, festivals, and tribal
+                traditions.
               </p>
             </div>
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-green-500 hover:text-white">
               <h1 className="text-2xl font-bold">Virtual Tours</h1>
               <p>
-                Experience India like never before with 360-degree virtual tours
-                of monuments, festivals, and archaeological sites.
+                Experience iconic spots like Dassam Falls, Baidyanath Dham, and
+                Netarhat hills with immersive 360-degree virtual tours.
               </p>
             </div>
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-red-500 hover:text-white">
@@ -177,10 +192,9 @@ function About() {
               <h1 className="text-2xl font-bold break-words block md:hidden">
                 Personalized Recom..
               </h1>
-
               <p>
-                Get customized suggestions for hotels, restaurants, guides, and
-                attractions based on your preferences.
+                Get suggestions for local stays, tribal cuisines, guides, and
+                cultural experiences tailored to your interests.
               </p>
             </div>
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-yellow-500 hover:text-white">
@@ -188,23 +202,23 @@ function About() {
                 Cultural Events & Workshops
               </h1>
               <p>
-                Participate in live cultural events and workshops, enhancing
-                your understanding of India's vibrant traditions.
+                Join live events like Sarhul, Karma Festival, and local craft
+                workshops to experience Jharkhand’s vibrant traditions.
               </p>
             </div>
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-purple-500 hover:text-white">
               <h1 className="text-2xl font-bold">Educational Resources</h1>
               <p>
-                Educators can access lesson plans, cultural resources, and tools
-                for student engagement, making learning more immersive.
+                Access resources on Jharkhand’s history, tribal knowledge, and
+                heritage, designed for students, educators, and travelers.
               </p>
             </div>
             <div className="p-4 bg-white text-black rounded-lg transition duration-300 transform hover:scale-110 hover:bg-teal-500 hover:text-white">
               <h1 className="text-2xl font-bold">Artisan Marketplace</h1>
               <p>
-                Support local artisans through our e-commerce platform, where
-                you can purchase traditional art, crafts, and textiles from
-                across the country.
+                Support local artisans by purchasing traditional handloom
+                sarees, tribal jewelry, and bamboo crafts directly from
+                Jharkhand’s villages.
               </p>
             </div>
           </div>
@@ -228,24 +242,27 @@ function About() {
             Our Mission
           </h1>
           <p className="px-3 italic text-gray-200 text-lg leading-relaxed">
-            Our mission is to digitally preserve India's cultural heritage while
-            promoting sustainable tourism that benefits local communities.
-            Through our platform, we aim to educate, engage, and inspire users
-            by providing a comprehensive and interactive journey through India’s
-            diverse cultural landscape.
+            Our mission is to digitally showcase Jharkhand’s rich tribal
+            culture, breathtaking landscapes, and heritage while promoting
+            sustainable tourism that uplifts local communities.
           </p>
           <p className="px-3 mt-4 text-gray-300">
-            Join us in celebrating the spirit of India – NAMASTE-Bharat: where
-            tradition meets innovation!
+            Join us in celebrating the spirit of Jharkhand –
+            <span className="font-semibold text-indigo-400">
+              {" "}
+              Johar Jharkhand
+            </span>
+            : where tradition meets innovation!
           </p>
         </div>
       </div>
+
       {/* meet my team */}
       <div className="w-full h-[calc(60vh)] p-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Meet Our Team
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
           {teamMembers.map((member, index) => (
             <div
               key={index}

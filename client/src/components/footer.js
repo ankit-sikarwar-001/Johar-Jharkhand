@@ -17,10 +17,10 @@ const Footer = () => {
           {/* Brand and Mission Section */}
           <div className="col-span-1">
             <div className="mb-4">
-              <h1 className="text-2xl font-bold">NAMASTE-Bharat</h1>
+              <h1 className="text-2xl font-bold">JOHAR - JHARKHAND</h1>
             </div>
             <p className="text-gray-400">
-              This platform dedicated to celebrating India's rich cultural
+              This platform dedicated to celebrating Jharkhand's rich cultural
               heritage. Learn traditional skills like dance and singing, and
               explore diverse cultures across the country.
             </p>
@@ -140,7 +140,7 @@ const Footer = () => {
 
         {/* Copyright and Privacy */}
         <div className="mt-5 pt-6 flex justify-between text-gray-400">
-          <p>©2024 Namaste Bharat. All rights reserved.</p>
+          <p>©2025 JOHAR - JHARKHAND. All rights reserved.</p>
           <div className="flex space-x-4 deb1:mr-48 deb:mr-0">
             <NavLink to="/" className="hover:text-white">
               Privacy Policy
