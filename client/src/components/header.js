@@ -111,7 +111,7 @@ function Header() {
             <NavLink
               className="mx-3 text-white my-2 md:my-0"
               onClick={() => window.scrollTo(0, 0)}
-              to="https://neon-smakager-29dc15.netlify.app/"
+              to="/shop"
             >
               Shop
             </NavLink>
