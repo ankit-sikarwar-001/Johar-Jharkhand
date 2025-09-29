@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 const Section = () => {
   const [muted, setMuted] = useState(true);
-   const navigate = useNavigate();
-   const [location, setLocation] = useState("");
-   const [date, setDate] = useState("");
-   const [transport, setTransport] = useState("");
+  const navigate = useNavigate();
+  const [location, setLocation] = useState("");
+  const [date, setDate] = useState("");
+  const [transport, setTransport] = useState("");
 
   const toggleAudio = () => {
     console.log("hello ");
@@ -20,7 +20,7 @@ const Section = () => {
     }
 
     // Pass data to Planner using state
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     navigate("/planner", {
       state: { location, date, transport },
     });
