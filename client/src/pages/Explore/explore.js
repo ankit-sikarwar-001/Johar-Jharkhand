@@ -102,7 +102,7 @@ export default function Explore() {
               onClick={() => play(0)}
               onDoubleClick={() => stop(0)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/johar_jharkhand.jpg"
+              src="/jharkhandimg/joharJharkhand.jpg"
               alt="Johar Jharkhand"
             />
             <audio
@@ -120,7 +120,7 @@ export default function Explore() {
               onClick={() => play(1)}
               onDoubleClick={() => stop(1)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/thar_ghuma.jpg"
+              src="/jharkhandimg/tharGhuma.jpg"
               alt="Thar Ghuma"
             />
             <audio
@@ -138,7 +138,7 @@ export default function Explore() {
               onClick={() => play(2)}
               onDoubleClick={() => stop(2)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/chota_nagpur.jpg"
+              src="/jharkhandimg/chotaNagpur.jpg"
               alt="Chota Nagpur"
             />
             <audio
@@ -192,7 +192,7 @@ export default function Explore() {
               onClick={() => play(5)}
               onDoubleClick={() => stop(5)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/chudi_payal.jpg"
+              src="/jharkhandimg/chudiPayal.jpg"
               alt="Chudi Payal"
             />
             <audio
