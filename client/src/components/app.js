@@ -1,9 +1,5 @@
 import { React, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./header";
 import Home from "../pages/home";
 import Footer from "./footer";
@@ -60,6 +56,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/shop" element={<Shop />} />
           <Route exact path="/Calender" element={<CalendarHeader />} />
+
           <Route exact path="/profile" element={<My_Detail />} />
           <Route exact path="/destinations" element={<My_Destination />} />
           <Route exact path="/learnings" element={<My_Learning />} />
