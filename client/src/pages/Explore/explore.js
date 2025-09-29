@@ -156,7 +156,7 @@ export default function Explore() {
               onClick={() => play(3)}
               onDoubleClick={() => stop(3)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/mohini.jpg"
+              src="/jharkhandimg/Mohini.jpg"
               alt="Mohini"
             />
             <audio
@@ -174,7 +174,7 @@ export default function Explore() {
               onClick={() => play(4)}
               onDoubleClick={() => stop(4)}
               className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
-              src="/jharkhandimg/ganja.jpg"
+              src="/jharkhandimg/Ganja.jpg"
               alt="GANJA"
             />
             <audio
