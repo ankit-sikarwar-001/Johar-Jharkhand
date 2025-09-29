@@ -30,17 +30,31 @@ const Section = () => {
     <>
       {" "}
       <section className="relative h-80vh w-90vw mx-auto">
-        {/* Background Image */}
-        <div className="absolute inset-0 rounded-2xl">
+        {/* Background Video (Cloudinary Embed) */}
+        <div className="absolute inset-0 rounded-2xl overflow-hidden">
           <video
+            controls
+            autoPlay
+            muted={muted}
+            playsInline
+            style={{ width: "100%", aspectRatio: "640/360" }}
+          >
+            <source
+              src="https://res.cloudinary.com/dbzxnoveu/video/upload/jharkhand_ohduyc.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* <video
             className="w-full h-full object-cover rounded-2xl"
-            src="/videos/jharkhand.mp4"
+            src="https://player.cloudinary.com/embed/?cloud_name=dbzxnoveu&public_id=jharkhand_ohduyc&profile=cld-default"
             // /videos/india1.mp4
             autoPlay
             muted={muted}
             loop
             playsInline
-          ></video>
+          ></video> */}
           <button
             onClick={toggleAudio}
             className="absolute top-4 z-20 right-4 bg-white text-black px-4 py-2 rounded-md shadow-md"
