@@ -107,7 +107,7 @@ export default function Explore() {
             />
             <audio
               ref={audioRefs}
-              src="/audio/johar_jharkhand.mp3"
+              src="/audio/JoharJharkhand.mp3"
               controls
               className="w-full mt-2 border border-gray-300"
             ></audio>
@@ -125,7 +125,7 @@ export default function Explore() {
             />
             <audio
               ref={audioRefs}
-              src="/audio/thar_ghuma.mp3"
+              src="/audio/tharGhuma.mp3"
               controls
               className="w-full mt-2 border border-gray-300"
             ></audio>
@@ -143,7 +143,7 @@ export default function Explore() {
             />
             <audio
               ref={audioRefs}
-              src="/audio/chota_nagpur.mp3"
+              src="/audio/chotaNagpur.mp3"
               controls
               className="w-full mt-2 border border-gray-300"
             ></audio>
@@ -161,7 +161,7 @@ export default function Explore() {
             />
             <audio
               ref={audioRefs}
-              src="/audio/mohini.mp3"
+              src="/audio/Mohini.mp3"
               controls
               className="w-full mt-2 border border-gray-300"
             ></audio>
@@ -179,7 +179,7 @@ export default function Explore() {
             />
             <audio
               ref={audioRefs}
-              src="/audio/ganja.mp3"
+              src="/audio/Ganja.mp3"
               controls
               className="w-full mt-2 border border-gray-300"
             ></audio>
