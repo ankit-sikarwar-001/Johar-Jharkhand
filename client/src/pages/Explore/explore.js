@@ -66,7 +66,7 @@ export default function Explore() {
         <h2 className="text-center text-slate-800 text-3xl font-bold mb-4">
           Explore the diverse cultural music of Jharkhand
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center place-items-center">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center place-items-center">
           {[
             "Johar Jharkhand",
             "Thar_Ghuma",
@@ -94,7 +94,117 @@ export default function Explore() {
               <p className="text-center mt-2">{song}</p>
             </div>
           ))}
+        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center place-items-center">
+          {/* Card 1 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(0)}
+              onDoubleClick={() => stop(0)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/johar_jharkhand.jpg"
+              alt="Johar Jharkhand"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/johar_jharkhand.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">Johar Jharkhand</p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(1)}
+              onDoubleClick={() => stop(1)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/thar_ghuma.jpg"
+              alt="Thar Ghuma"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/thar_ghuma.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">Thar Ghuma</p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(2)}
+              onDoubleClick={() => stop(2)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/chota_nagpur.jpg"
+              alt="Chota Nagpur"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/chota_nagpur.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">Chota Nagpur</p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(3)}
+              onDoubleClick={() => stop(3)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/mohini.jpg"
+              alt="Mohini"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/mohini.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">Mohini</p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(4)}
+              onDoubleClick={() => stop(4)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/ganja.jpg"
+              alt="GANJA"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/ganja.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">GANJA</p>
+          </div>
+
+          {/* Card 6 */}
+          <div className="bg-white shadow-lg rounded-lg p-3">
+            <img
+              onClick={() => play(5)}
+              onDoubleClick={() => stop(5)}
+              className="w-full h-32 object-cover rounded-t-lg cursor-pointer"
+              src="/jharkhandimg/chudi_payal.jpg"
+              alt="Chudi Payal"
+            />
+            <audio
+              ref={audioRefs}
+              src="/audio/chudiPayal.mp3"
+              controls
+              className="w-full mt-2 border border-gray-300"
+            ></audio>
+            <p className="text-center mt-2">Chudi Payal</p>
+          </div>
         </div>
+
         <div className="flex justify-center mt-8">
           <button
             // onClick={redirectToLogin}
