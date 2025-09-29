@@ -1,5 +1,5 @@
 import "../css/header.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -34,7 +34,7 @@ function Header() {
     try {
       localStorage.clear();
       toast.success("Logout Successfully");
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -111,7 +111,7 @@ function Header() {
             <NavLink
               className="mx-3 text-white my-2 md:my-0"
               onClick={() => window.scrollTo(0, 0)}
-              to="/shop"
+              to="https://neon-smakager-29dc15.netlify.app/"
             >
               Shop
             </NavLink>
@@ -154,7 +154,6 @@ function Header() {
                     </NavLink>
                     <NavLink
                       onClick={handleLogout}
-                      
                       to="/"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                     >
