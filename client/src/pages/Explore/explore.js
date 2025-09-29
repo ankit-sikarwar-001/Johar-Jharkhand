@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "../Explore/explore.css";
-import NamasteSpeaker from "../Explore/NamasteSpeaker"
+import NamasteSpeaker from "../Explore/NamasteSpeaker";
 import Mapnavi from "../Home/Mapnavi";
 
 export default function Explore() {
@@ -23,7 +23,8 @@ export default function Explore() {
 
   useEffect(() => {
     const textElement = textRef.current;
-    const textContent = "Explore the beauty of Jharkhand through Johar Jharkhand";
+    const textContent =
+      "Explore the beauty of Jharkhand through Johar Jharkhand";
     let index = 0;
 
     const typingEffect = setInterval(() => {
@@ -68,7 +69,7 @@ export default function Explore() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center place-items-center">
           {[
             "Johar Jharkhand",
-            "Thar Ghuma",
+            "Thar_Ghuma",
             "Chota Nagpur",
             "Mohini",
             "GANJA",
